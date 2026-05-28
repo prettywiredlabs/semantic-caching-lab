@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  body {
+    font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+  }
+
+  *:focus-visible {
+    outline: 2px solid #1f3d2e;
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+}
+
+@layer components {
+  .card {
+    @apply rounded-card border border-ink-line/70 bg-warm-50 shadow-soft;
+  }
+
+  .card-inset {
+    @apply rounded-card border border-ink-line/60 bg-cream-50;
+  }
+
+  .label {
+    @apply text-[11px] font-medium uppercase tracking-label text-ink-muted;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full
+           bg-forest px-6 py-2.5 text-sm font-medium text-cream-50
+           transition-colors hover:bg-forest-deep
+           disabled:cursor-not-allowed disabled:opacity-60;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center gap-2 rounded-full border
+           border-ink-line/80 bg-warm-50 px-4 py-1.5 text-xs
+           font-medium uppercase tracking-label text-ink-muted
+           transition-colors hover:border-ink-muted hover:text-ink;
+  }
+
+  .pill {
+    @apply inline-flex items-center gap-1.5 rounded-full px-3 py-1
+           text-[11px] font-medium uppercase tracking-label;
+  }
+
+  .pill-hit {
+    @apply pill bg-forest/10 text-forest;
+  }
+
+  .pill-miss {
+    @apply pill bg-warm-200 text-ink-muted;
+  }
+
+  .pill-neutral {
+    @apply pill bg-warm-100 text-ink-muted;
+  }
+}
+
+@layer utilities {
+  .fade-in {
+    animation: fadeIn 280ms ease-out both;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(2px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  .shimmer {
+    background-image: linear-gradient(
+      100deg,
+      rgba(217, 209, 191, 0) 30%,
+      rgba(217, 209, 191, 0.55) 50%,
+      rgba(217, 209, 191, 0) 70%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 1.6s linear infinite;
+  }
+
+  @keyframes shimmer {
+    from { background-position: 200% 0; }
+    to   { background-position: -200% 0; }
+  }
+
+  .scrollbar-soft::-webkit-scrollbar { width: 8px; }
+  .scrollbar-soft::-webkit-scrollbar-track { background: transparent; }
+  .scrollbar-soft::-webkit-scrollbar-thumb {
+    background: #d9d1bf;
+    border-radius: 8px;
+  }
+}

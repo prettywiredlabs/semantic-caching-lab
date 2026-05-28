@@ -1,0 +1,62 @@
+{
+  "currency": "USD",
+  "unit": "per 1M tokens",
+  "models": [
+    {
+      "id": "claude-opus-4-7",
+      "name": "Claude Opus 4.7",
+      "provider": "anthropic",
+      "inputPerMillion": 5.0,
+      "outputPerMillion": 25.0,
+      "contextWindow": 1000000
+    },
+    {
+      "id": "claude-opus-4-6",
+      "name": "Claude Opus 4.6",
+      "provider": "anthropic",
+      "inputPerMillion": 5.0,
+      "outputPerMillion": 25.0,
+      "contextWindow": 1000000
+    },
+    {
+      "id": "claude-opus-4-5-20251101",
+      "name": "Claude Opus 4.5",
+      "provider": "anthropic",
+      "inputPerMillion": 5.0,
+      "outputPerMillion": 25.0,
+      "contextWindow": 200000
+    },
+    {
+      "id": "claude-opus-4-1-20250805",
+      "name": "Claude Opus 4.1",
+      "provider": "anthropic",
+      "inputPerMillion": 15.0,
+      "outputPerMillion": 75.0,
+      "contextWindow": 200000
+    },
+    {
+      "id": "claude-sonnet-4-6",
+      "name": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "inputPerMillion": 3.0,
+      "outputPerMillion": 15.0,
+      "contextWindow": 1000000
+    },
+    {
+      "id": "claude-sonnet-4-5-20250929",
+      "name": "Claude Sonnet 4.5",
+      "provider": "anthropic",
+      "inputPerMillion": 3.0,
+      "outputPerMillion": 15.0,
+      "contextWindow": 200000
+    },
+    {
+      "id": "claude-haiku-4-5-20251001",
+      "name": "Claude Haiku 4.5",
+      "provider": "anthropic",
+      "inputPerMillion": 1.0,
+      "outputPerMillion": 5.0,
+      "contextWindow": 200000
+    }
+  ]
+}
