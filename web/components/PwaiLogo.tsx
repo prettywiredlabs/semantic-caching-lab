@@ -4,7 +4,7 @@ export function PwaiLogo({ className }: { className?: string }) {
   return (
     <div className={className}>
       <Image
-        src="/PWAI-logo.png"
+        src="/images/PWAI-logo.png"
         alt="Pretty Wired AI logo"
         width={120}
         height={40}
