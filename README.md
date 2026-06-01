@@ -81,6 +81,10 @@ python setup.py
 
 Then restart the API bridge and web UI as described in [Run the Sample](#run-the-sample). The database will be seeded with new data as you interact with the app.
 
+## Beyond the Code
+
+Read [Prompt Caching: Stop Paying for the Same Answer Twice](https://ai.prettywiredlabs.com/blog/prompt-caching) for the bigger picture behind the ideas in this repository.
+
 ## Issues & Questions
 
 If you run into any problems or have questions, please [file an issue](../../issues).
