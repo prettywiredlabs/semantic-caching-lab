@@ -8,6 +8,7 @@ export function PwaiLogo({ className }: { className?: string }) {
         alt="Pretty Wired AI logo"
         width={120}
         height={40}
+        style={{ width: "auto", height: "auto" }}
         priority
       />
     </div>
