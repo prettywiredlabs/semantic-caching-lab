@@ -1,11 +1,11 @@
-# Prompt Cache Lab
+# Semantic Cache Lab
 
 A web UI that visually demonstrates how semantic response caching reduces AI cost, showing cache hits, tokens saved, and session analytics in real time.
 
 <table>
   <tr>
-    <td><img src="images/prompt-cache-1.png" alt="Prompt Cache Lab - Cache Hit" width="100%"/></td>
-    <td><img src="images/prompt-cache-2.png" alt="Prompt Cache Lab - Session Summary" width="100%"/></td>
+    <td><img src="images/prompt-cache-1.png" alt="Semantic Cache Lab - Cache Hit" width="100%"/></td>
+    <td><img src="images/prompt-cache-2.png" alt="Semantic Cache Lab - Session Summary" width="100%"/></td>
   </tr>
 </table>
 
@@ -100,7 +100,7 @@ Use this sample as a starting point for experimentation and learning, not as a d
 
 ## Beyond the Code
 
-Read [Prompt Caching: Stop Paying for the Same Answer Twice](https://ai.prettywiredlabs.com/blog/prompt-caching) for the bigger picture behind the ideas in this repository.
+Read [Semantic Caching: Stop Paying for the Same Answer Twice](https://ai.prettywiredlabs.com/blog/semantic-caching) for the bigger picture behind the ideas in this repository.
 
 ## Issues & Questions
 
