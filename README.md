@@ -57,7 +57,7 @@ In a second terminal, start the web UI:
 cd web && npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser. Type a question, and the UI will show whether the response came from the cache or from Claude, along with tokens saved and session-level cost analytics.
+Open [http://localhost:3000](http://localhost:3000) in your browser. Type a question, and the UI will show whether the response came from the cache or from Claude, along with tokens saved and session analytics.
 
 ## Reset the Database
 
@@ -80,6 +80,23 @@ python setup.py
 ```
 
 Then restart the API bridge and web UI as described in [Run the Sample](#run-the-sample). The database will be seeded with new data as you interact with the app.
+
+## Sample Limitations
+
+This repository is a demonstration of **semantic response caching**, built to make the caching flow, token impact, and UI behavior easy to understand.
+
+It is **not production-ready**. For simplicity, the sample uses lightweight in-memory state for parts of the experience and intentionally favors clarity over robustness, isolation, and scale.
+
+If you plan to use these ideas in production, you should expect to further optimize and harden the implementation, including areas such as:
+
+- cache-key design and invalidation strategy
+- session and conversation scoping
+- model-specific response handling
+- persistence and multi-user isolation
+- observability, error handling, and security
+- performance and cost controls under real traffic
+
+Use this sample as a starting point for experimentation and learning, not as a drop-in production architecture.
 
 ## Beyond the Code
 
