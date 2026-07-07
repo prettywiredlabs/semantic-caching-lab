@@ -98,10 +98,6 @@ If you plan to use these ideas in production, you should expect to further optim
 
 Use this sample as a starting point for experimentation and learning, not as a drop-in production architecture.
 
-## Beyond the Code
-
-Read [Semantic Caching: Stop Paying for the Same Answer Twice](https://ai.prettywiredlabs.com/blog/semantic-caching) for the bigger picture behind the ideas in this repository.
-
 ## Issues & Questions
 
 If you run into any problems or have questions, please [file an issue](../../issues).
